@@ -43,9 +43,9 @@ class ModelShippingCep extends Model
             'title' => $this->language->get('text_title'),
             'quote' => [
                 self::CODE => [
-                    'code'         => self::CODE . self::CODE,
+                    'code'         => self::CODE . '.' . self::CODE,
                     'title'        => $this->language->get('text_title'),
-                    'quote'        => 0,
+                    'cost'         => 0,
                     'tax_class_id' => 0,
                     'text'         => $this->currency->format(0.00, $this->session->data['currency'])
                 ]
